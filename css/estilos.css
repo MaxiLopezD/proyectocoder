@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+header{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    background-color: black;
+}
+.header__logo{
+    width: 60%;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.header__navegacion {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    padding: 5px;
+    margin: 5px;
+/*     flex-grow: 1;
+ */}
+li{
+    list-style-type: none;
+    margin: 1rem;
+}
+li a{ 
+    color: azure;
+    text-decoration: none;
+}
+/* fin header comun para todos
+ */
+
+/* main de index
+ */
+
+.inicio__baner{
+    width: 100%;
+
+}
+.index__main{
+    background-color: aquamarine;
+    color: brown;
+
+}
+
+/* main del catalogo
+ */
+
+
+.grid__conteiner{
+    display: grid;
+    border: 5px solid rgb(242, 244, 245);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:     
+        "titulo titulo titulo"
+        "ferrero1 ferrero2 ferrero3"
+        "ferrero4 ferrero5 ferrero6"
+        "ferrero7 ferrero8 ferrero9";
+    justify-content: center;
+    justify-items: center;
+    gap: 10px
+}  
+
+.catalogo__titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(33, 189, 87);
+    
+}
+.grid__titulo{
+    grid-area: titulo;
+    color: brown;
+    text-align: center;
+}
+.grid__ferrero1{
+    grid-area: ferrero1;
+}
+.grid__ferrero2{
+    grid-area: ferrero2;
+}
+.grid__ferrero3{
+    grid-area: ferrero3;
+}
+.grid__ferrero4{
+    grid-area: ferrero4;
+}
+.grid__ferrero5{
+    grid-area: ferrero5;
+}
+.grid__ferrero6{
+    grid-area: ferrero6;
+}
+.grid__ferrero7{
+    grid-area: ferrero7;
+}
+.grid__ferrero8{
+    grid-area: ferrero8;
+}
+.grid__ferrero9{
+    grid-area: ferrero9;
+}
+
+
+.catalogo__main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    border: 1rem;
+    border-color: rgb(7, 81, 17); 
+    border-style: solid;
+    border-radius: 19px;
+    width: 19%;
+    background-color: bisque;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* .catalogo__box{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: aquamarine;
+    color: white;
+} */
+
+/* MAIN DE CONTACTO
+ */
+.contacto__titulo{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+.main__contacto{
+    align-items: center;
+    background-color: rgb(27, 11, 197) ;
+    
+    
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto__form{
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+}
+.contacto__div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacto__div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+textarea{
+    width: 70%;
+    height: 50h;
+    margin: 5%;
+}
+
+/* MAIN DE ENVIOS
+ */
+.envios__titulo{
+    background-color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.envios__texto{
+    background-color: antiquewhite;
+}
+.envios mapa{
+    width: 100%;
+}
+
+/* MAIN DE NOSOTROS
+ */
+.nosotros__letra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(96, 3s7, 37);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.nosotros__img{
+    display: flex;
+    flex-direction: column;
+    justify-items: center; 
+    border-color: aqua;
+    align-items: center
+}
+.nosotros__info{
+    display: flex;
+    flex-direction: column;
+    justify-items: center; 
+    width: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+
+/* FOOTER PARA TODOS
+ */
+footer{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 4% 4% 4%;
+}
+.footer__redes{
+    width: 4%;
+    margin: 1rem;
+}
+.footer__disclaimer{
+    color: aqua;
+    width: 33vh;
+    text-align: center;}
