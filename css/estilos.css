@@ -12,10 +12,10 @@ header{
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(248, 4, 4);
 }
 .header__logo{
-    width: 60%;
+    width: 5rem;
 }
 ul{
     display: flex;
@@ -26,10 +26,10 @@ ul{
     display: flex;
     justify-content: center; 
     align-items: flex-end;
-    padding: 5px;
-    margin: 5px;
-/*     flex-grow: 1;
- */}
+    padding: 0.313rem;
+    margin: 0.313rem;
+    flex-grow: 1;
+}
 li{
     list-style-type: none;
     margin: 1rem;
@@ -43,17 +43,69 @@ li a{
 
 /* main de index
  */
-
-.inicio__baner{
-    width: 100%;
-    transform: scale(1.5);
+.grid__index{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: aliceblue;
+    grid-template-areas: "portada portada portada portada"
+                        "resumen resumen imagen__destacada imagen__destacada"
+                        "card__1 card__2 card__3 card__3";
+    justify-content: center;
+    align-items: center;
 
 }
+.titulo__index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.portada{
+    grid-area: portada;
+    display: flex;
+    background-image: url(../recursos/imagenes/CHOCO.jpg);
+    height: 70vh;
+    border-color: antiquewhite;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+.resumen{
+    grid-area:resumen ;
+}
+.imagen__destacada{
+    grid-area: imagen__destacada;
+    grid-template-columns: 2fr;
+}
+
+.card__1{
+    grid-area:card__1 ;
+}
+.card__2{
+    grid-area:card__2 ;
+}
+.card__3{
+    grid-area:card__3 ;
+}
+
 .index__main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    border: 0.5rem;
+}
+
+/* .index__main{
     background-color: aquamarine;
     color: brown;
 
-}
+} */
 
 /* main del catalogo
  */
@@ -61,7 +113,7 @@ li a{
 
 .grid__conteiner{
     display: grid;
-    border: 5px solid rgb(242, 244, 245);
+    border: 0.313rem solid rgb(242, 244, 245);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:     
         "titulo titulo titulo"
@@ -70,13 +122,12 @@ li a{
         "ferrero7 ferrero8 ferrero9";
     justify-content: center;
     justify-items: center;
-    gap: 10px
+    gap: 0.313rem
 }  
 
 .catalogo__titulo{
     display: flex;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
     color: rgb(33, 189, 87);
     
@@ -118,25 +169,16 @@ li a{
 .catalogo__main{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
+    flex-wrap: wrap;
     border: 1rem;
     border-color: rgb(7, 81, 17); 
     border-style: solid;
-    border-radius: 19px;
-    width: 19%;
+    border-radius: 1.25rem;
     background-color: bisque;
-    margin: 1rem;
-    padding: 1rem;
+    
 }
 
-/* .catalogo__box{
-    display:flex ;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: aquamarine;
-    color: white;
-} */
+
 
 /* MAIN DE CONTACTO
  */
@@ -237,3 +279,122 @@ footer{
     color: aqua;
     width: 33vh;
     text-align: center;}
+
+/* media de tablet
+ */
+@media (min-width: 541px) and (max-width: 720px){
+.grid__index {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.50fr 0.50fr 0.50fr 0.50fr 0.50fr 0.50fr;
+    grid-template-areas: "portada "
+                        "resumen " 
+                        "imagen__destacada"
+                        "card__1" 
+                        "card__2"
+                        "card__3" 
+                        "card__4";
+}
+header{
+    flex-direction: column;
+    background-color: aqua;
+    align-items: center;
+    ;
+}
+li a{ 
+    color: rgb(12, 13, 13);
+}
+.header__navegacion{
+    flex-direction: column;
+
+}
+.header__logo{
+    width: 3.5rem;
+}
+
+.portada{
+    height: 70vh;
+}
+.grid__conteiner{
+    display: grid;
+    border: 0.313rem solid rgb(242, 244, 245);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:     
+        "titulo titulo"
+        "ferrero1 ferrero2" 
+        "ferrero3 ferrero4"
+        "ferrero5 ferrero6"
+        "ferrero7 ferrero8" 
+        "ferrero9 ferrero9";
+    justify-content: center;
+    justify-items: center;
+    gap: 0.313rem
+}  
+ul{
+    flex-direction: column;
+}
+footer{
+    flex-direction: column;
+}
+}
+
+/* media de celular
+ */
+@media (min-width: 320px) and (max-width: 540px){
+.grid__index{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-areas: "portada "
+                        "resumen" 
+                        "imagen__destacada"
+                        "card__1" 
+                        "card__2"
+                        "card__3" 
+                        "card__4";
+}
+.img__index{
+    align-items: center;
+}
+header {
+    flex-direction: column; 
+    background-color: blue;
+    align-items: center;
+
+}
+ul{
+    flex-direction: column;
+}
+li a{ 
+    color: rgb(220, 35, 192);
+}
+.header__navegacion{
+    flex-direction: column;
+}
+.header__logo{
+    width: 2rem;
+}
+.portada{
+    height: 50vh;
+}
+.grid__conteiner{
+    display: grid;
+    border: 0.313rem solid rgb(242, 244, 245);
+    grid-template-columns: 1fr;
+    grid-template-areas:     
+        "titulo"
+        "ferrero1" 
+        "ferrero2" 
+        "ferrero3" 
+        "ferrero4"
+        "ferrero5" 
+        "ferrero6"
+        "ferrero7" 
+        "ferrero8" 
+        "ferrero9";
+    justify-content: center;
+    justify-items: center;
+    gap: 0.313rem
+} 
+footer{
+    flex-direction: column;
+}
+}
