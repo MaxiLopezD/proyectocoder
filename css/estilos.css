@@ -8,7 +8,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
 }
-header{
+/* header{
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
@@ -37,23 +37,12 @@ li{
 li a{ 
     color: azure;
     text-decoration: none;
-}
+} */
 /* fin header comun para todos
  */
 
 /* main de index
  */
-.grid__index{ 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    color: aliceblue;
-    grid-template-areas: "portada portada portada portada"
-                        "resumen resumen imagen__destacada imagen__destacada"
-                        "card__1 card__2 card__3 card__3";
-    justify-content: center;
-    align-items: center;
-
-}
 .titulo__index{
     display: flex;
     flex-direction: column;
@@ -63,9 +52,7 @@ li a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .portada{
-    grid-area: portada;
-    display: flex;
-    background-image: url(../recursos/imagenes/CHOCO.jpg);
+    background-image: url(../recursos/imagenes/baner.jpg);
     height: 70vh;
     border-color: antiquewhite;
     background-attachment: fixed;
@@ -75,41 +62,29 @@ li a{
     justify-content: center;
     align-items: center;
 }
-.resumen{
-    grid-area:resumen ;
-}
-.imagen__destacada{
-    grid-area: imagen__destacada;
-    grid-template-columns: 2fr;
-}
 
-.card__1{
-    grid-area:card__1 ;
-}
-.card__2{
-    grid-area:card__2 ;
-}
-.card__3{
-    grid-area:card__3 ;
-}
 
 .index__main{
     display: flex;
     flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
     padding: 1rem;
     flex-wrap: wrap;
     border: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.texto__index{
+    justify-content: center;
+    align-items: center;
 }
 
-/* .index__main{
-    background-color: aquamarine;
-    color: brown;
-
-} */
-
+.img__carrousel{
+    height: 60rem;
+}
 /* main del catalogo
  */
-
 
 .grid__conteiner{
     display: grid;
@@ -182,6 +157,15 @@ li a{
 
 /* MAIN DE CONTACTO
  */
+.portada__contacto{
+    background-image: url(../recursos/imagenes/tumomentopng.png);
+    height: 70vh;
+    border-color: rgb(228, 191, 144);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .contacto__titulo{
     display: flex;
     justify-content: center;
@@ -233,7 +217,11 @@ textarea{
     background-color: antiquewhite;
 }
 .envios mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    background-image: url(../recursos/Mapa-coberturas3.jpg);
 }
 
 /* MAIN DE NOSOTROS
@@ -242,24 +230,9 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(96, 3s7, 37);
+    color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-}
-.nosotros__img{
-    display: flex;
-    flex-direction: column;
-    justify-items: center; 
-    border-color: aqua;
-    align-items: center
-}
-.nosotros__info{
-    display: flex;
-    flex-direction: column;
-    justify-items: center; 
-    width: 100%;
-    background-color: antiquewhite;
-    text-align: center;
 }
 
 
@@ -283,7 +256,7 @@ footer{
 /* media de tablet
  */
 @media (min-width: 541px) and (max-width: 720px){
-.grid__index {
+/* .grid__index {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.50fr 0.50fr 0.50fr 0.50fr 0.50fr 0.50fr;
     grid-template-areas: "portada "
@@ -293,8 +266,8 @@ footer{
                         "card__2"
                         "card__3" 
                         "card__4";
-}
-header{
+} */
+/* header{
     flex-direction: column;
     background-color: aqua;
     align-items: center;
@@ -309,7 +282,7 @@ li a{
 }
 .header__logo{
     width: 3.5rem;
-}
+} */
 
 .portada{
     height: 70vh;
@@ -340,7 +313,7 @@ footer{
 /* media de celular
  */
 @media (min-width: 320px) and (max-width: 540px){
-.grid__index{
+/* .grid__index{
     grid-template-columns: 1fr;
     grid-template-rows: 0.75fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
     grid-template-areas: "portada "
@@ -353,8 +326,8 @@ footer{
 }
 .img__index{
     align-items: center;
-}
-header {
+} */
+/* header {
     flex-direction: column; 
     background-color: blue;
     align-items: center;
@@ -371,7 +344,7 @@ li a{
 }
 .header__logo{
     width: 2rem;
-}
+} */
 .portada{
     height: 50vh;
 }

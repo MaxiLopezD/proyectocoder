@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../recursos/iconos/logo.png">
+    <!--bootstrap-->    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--css-->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>MIMAX</title>
 </head>
 <body>
     <header>
-        <a href="../index.html"><img class="header__logo"src="../recursos/iconos/logomimax.png"></a>
+        <!-- <a href="../index.html"><img class="header__logo"src="../recursos/iconos/logomimax.png"></a>
         <nav class="header__navegacion">
             <ul class="header__ul">
                 <li class="header__li"><a href="../index.html">INICIO</a></li>
@@ -19,28 +22,58 @@
                 <li class="header__li"><a href="envios.html">ENVIOS</a></li>
                 <li class="header__li"><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
             </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../recursos/iconos/logomimax.png" alt="logo" width="60" height="48" class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                    <a class="nav-link" href="sobre-nosotros.html">SOBRE NOSOTROS</a>
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    <a class="nav-link" href="catalogo.html">CATALOGO</a>
+                    <a class="nav-link" href="envios.html">ENVIOS</a>
+
+                </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="nosotros__letra">
-        <div class="nosotros__img">
-            <img src="../recursos/imagenes/estamos de vuelta.jfif" alt="estamos de vuelta">
-            <img src="../recursos/imagenes/imagen choco.jfif" alt="choco">
-        </div>
-        <div class="nosotros__info">
-            <h2> ALGO SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum quo dolorem facilis distinctio laboriosam eum consequatur molestiae, earum deleniti eius, nemo tenetur quibusdam vitae. Animi in aliquid quam doloribus.
+    <main>
+        <section class="conteiner"> 
+            <article class="row align-item-center nosotros__letra">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img class="img-fluid" src="../recursos/imagenes/chocolate.jpg" alt="estamos de vuelta">
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <h2> ALGO SOBRE NOSOTROS</h2>
+                    <p>En los últimos años asistimos al crecimiento de comercio electrónico en el rubro mayorista en Argentina. Siguiendo esta tendencia creamos Pop como un punto de encuentro para fabricantes e importadores con comerciantes, mayoristas y distribuidores de todo el país
+                    </p>
+                    <h2>HISTORIA</h2>
+                    <p>Con 32 años, y mucho entusiasmo, Maxi inicia su actividad en la compra y venta de artículos para kiosco. El inicio fue de manera personal, haciéndose cargo de las compras, la venta, el armado de los pedidos, la entrega delos mismos. La modalidad de venta, tan sencilla como milenaria, venta ambulante, con mercadería en stock en un carro desarrollado para ese fin.
+                    </p>
+                </div>
+            </article>
+            <article class="row align-item-center nosotros__letra">
+                <div class="col-md-6 col-sm-12">
+                    <h2>ESPIRITU</h2>
+                <p>En mimax consideramos que nuestro capital humano es clave y lo más importante a la hora de seguir creciendo.
+                    Si queres formar parte de nuestro staff mandanos tus datos a rrhh@mimax.com.ar y te contactaremos en futuras búsquedas.
                 </p>
-            <h2>HISTORIA</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum quo dolorem facilis distinctio laboriosam eum consequatur molestiae, earum deleniti eius, nemo tenetur quibusdam vitae. Animi in aliquid quam doloribus.
+                    <h2>MISION</h2>
+                <p>Nuestra misión es ofrecer el mejor servicio de venta y distribución, generando valor a nuestros proveedores y clientes, diferenciándonos por la dedicación en lo que hacemos, dentro de un ambiente laboral sano, distendido y agradable para nuestros empleados, clientes, proveedores y medio ambiente.
                 </p>
-            <h2>ESPIRITU</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum quo dolorem facilis distinctio laboriosam eum consequatur molestiae, earum deleniti eius, nemo tenetur quibusdam vitae. Animi in aliquid quam doloribus.
-                </p>
-            <h2>MISION</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum quo dolorem facilis distinctio laboriosam eum consequatur molestiae, earum deleniti eius, nemo tenetur quibusdam vitae. Animi in aliquid quam doloribus.
-                </p>
-        </div>    
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img class="img-fluid" src="../recursos/imagenes/pensamiento.jpg" alt="feltfort">
+                </div>
+            </article>
+        </section>
     </main>
     
     <footer>
@@ -51,5 +84,6 @@
             Todos los derechos reservados
         </div>    
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
