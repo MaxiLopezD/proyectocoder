@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
+    background-image: linear-gradient(to top, rgb(218, 39, 215), blue);
 }
 
 /* main de index
@@ -24,19 +25,25 @@ body{
     display: flex;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
     padding: 1rem;
     flex-wrap: wrap;
     border: 0.5rem;
     justify-content: center;
     align-items: center;
+    color: aqua;
 }
 .texto__index{
     justify-content: center;
     align-items: center;
+    
 }
 .img__carrousel{
-    height: 60rem;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item{
+    
 }
 /* MAIN DE NOSOTROS
  */
@@ -46,6 +53,14 @@ body{
     justify-content: center;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0.5rem;
+}
+.imagen__animacion:hover{
+    transform: scale(0.9);
+    transition: all 2s;
+}
+.texto__animacion{
+
 }
 /* MAIN DE CONTACTO
  */
@@ -163,13 +178,10 @@ textarea{
 /* MAIN DE ENVIOS
  */
 .envios__titulo{
-    background-color: blanchedalmond;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
-.envios__texto{
-    background-color: antiquewhite;
-}
+
 .envios__mapa{
     display: flex;
     justify-content: center;
