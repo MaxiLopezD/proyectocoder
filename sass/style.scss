@@ -7,8 +7,8 @@
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(to top, rgb(218, 39, 215), blue);
+    font-family: $font-principal;
+    background-image: $color-principal;
 
     .portada{
         background-image: url(../recursos/imagenes/baner.jpg);
@@ -23,13 +23,13 @@ body{
     .index__main{
         display: flex;
         flex-direction: column;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: $font-principal;
         padding: 1rem;
         flex-wrap: wrap;
         border: 0.5rem;
         justify-content: center;
         align-items: center;
-        color: rgb(19, 225, 225);
+        color: $color-secundario;
         &__texto{
             justify-content: center;
             align-items: center;
@@ -48,8 +48,8 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: $color-secundario;
+        font-family: $font-secundaria;
         margin: 0.5rem;
     }
     .imagen__animacion:hover{
@@ -71,11 +71,11 @@ body{
     .contacto__titulo{
         display: flex;
         justify-content: center;
-        background-color: aqua;
+        background-color: $back-principal;
     }
     .contacto__main{
         align-items: center;
-        background-color: rgb(27, 11, 197);
+        background-color: $back-principal;
     }
     form{
         display: flex;
@@ -109,7 +109,7 @@ body{
      */
     .grid__conteiner{
         display: grid;
-        border: 0.313rem solid rgb(242, 244, 245);
+        border: 0.313rem solid $border-principal;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:     
             "titulo titulo titulo"
@@ -123,14 +123,14 @@ body{
     
     .catalogo__titulo__grid{
         grid-area: titulo;
-        color: brown;
+        color: $color-secundario;
         text-align: center;
 
         &__titulo{
             display: flex;
             justify-content: center;
             align-items: center;
-            color: rgb(33, 189, 87);
+            color: $color-secundario;
             
         }
     }
@@ -166,16 +166,16 @@ body{
         flex-direction: column;
         flex-wrap: wrap;
         border: 1rem;
-        border-color: rgb(7, 81, 17); 
+        border-color: $borser_secundario; 
         border-style: solid;
         border-radius: 1.25rem;
-        background-color: bisque;
+        background-color: $border-principal;
         
     }
     /* MAIN DE ENVIOS
      */
     .envios__titulo{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $font-principal;
         text-align: center;
     }
     
@@ -185,23 +185,5 @@ body{
         align-items: center;
         width: 100%;
         background-image: url(../recursos/Mapa-coberturas3.jpg);
-    }
-    
-    /* FOOTER PARA TODOS
-     */
-    footer{
-        display: flex;
-        align-items: center;
-        color: white;
-        padding: 4% 4% 4%;
-
-        &__redes{
-            width: 4%;
-            margin: 1rem;
-        }
-        &__disclaimer{
-            color: aqua;
-            width: 33vh;
-            text-align: center;}
     }
 }

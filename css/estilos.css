@@ -3,15 +3,13 @@ footer {
   align-items: center;
   color: white;
   padding: 4% 4% 4%; }
-
-.footer__redes {
-  width: 4%;
-  margin: 1rem; }
-
-.footer__disclaimer {
-  color: aqua;
-  width: 33vh;
-  text-align: center; }
+  footer__redes {
+    width: 4%;
+    margin: 1rem; }
+  footer__disclaimer {
+    color: aqua;
+    width: 33vh;
+    text-align: center; }
 
 /* media de tablet
  */
@@ -79,8 +77,6 @@ body {
   /* main del catalogo
      */
   /* MAIN DE ENVIOS
-     */
-  /* FOOTER PARA TODOS
      */ }
   body .portada {
     background-image: url(../recursos/imagenes/baner.jpg);
@@ -112,8 +108,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #13e1e1;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     margin: 0.5rem; }
   body .imagen__animacion:hover {
     transform: scale(0.9);
@@ -132,7 +128,7 @@ body {
     background-color: aqua; }
   body .contacto__main {
     align-items: center;
-    background-color: #1b0bc5; }
+    background-color: aqua; }
   body form {
     display: flex;
     justify-content: center; }
@@ -156,7 +152,7 @@ body {
     margin: 5%; }
   body .grid__conteiner {
     display: grid;
-    border: 0.313rem solid #f2f4f5;
+    border: 0.313rem solid #e4bf90;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "titulo titulo titulo" "ferrero1 ferrero2 ferrero3" "ferrero4 ferrero5 ferrero6" "ferrero7 ferrero8 ferrero9";
     justify-content: center;
@@ -164,13 +160,13 @@ body {
     gap: 0.313rem; }
   body .catalogo__titulo__grid {
     grid-area: titulo;
-    color: brown;
+    color: #13e1e1;
     text-align: center; }
     body .catalogo__titulo__grid__titulo {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #21bd57; }
+      color: #13e1e1; }
   body .grid__ferrero1 {
     grid-area: ferrero1; }
   body .grid__ferrero2 {
@@ -197,9 +193,9 @@ body {
     border-color: #075111;
     border-style: solid;
     border-radius: 1.25rem;
-    background-color: bisque; }
+    background-color: #e4bf90; }
   body .envios__titulo {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center; }
   body .envios__mapa {
     display: flex;
@@ -207,15 +203,3 @@ body {
     align-items: center;
     width: 100%;
     background-image: url(../recursos/Mapa-coberturas3.jpg); }
-  body footer {
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 4% 4% 4%; }
-    body footer__redes {
-      width: 4%;
-      margin: 1rem; }
-    body footer__disclaimer {
-      color: aqua;
-      width: 33vh;
-      text-align: center; }

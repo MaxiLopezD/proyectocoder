@@ -3,12 +3,13 @@ footer{
     align-items: center;
     color: white;
     padding: 4% 4% 4%;
+
+    &__redes{
+        width: 4%;
+        margin: 1rem;
+    }
+    &__disclaimer{
+        color: aqua;
+        width: 33vh;
+        text-align: center;}
 }
-.footer__redes{
-    width: 4%;
-    margin: 1rem;
-}
-.footer__disclaimer{
-    color: aqua;
-    width: 33vh;
-    text-align: center;}
