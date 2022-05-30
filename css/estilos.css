@@ -2,16 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
+    background-image: linear-gradient(to top, rgb(218, 39, 215), blue);
 }
 
 /* main de index
  */
 .portada{
     background-image: url(../recursos/imagenes/baner.jpg);
-    height: 70vh;
+    height: 50vh;
     border-color: antiquewhite;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -24,20 +25,24 @@ body{
     display: flex;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
     padding: 1rem;
     flex-wrap: wrap;
     border: 0.5rem;
     justify-content: center;
     align-items: center;
+    color: aqua;
 }
 .texto__index{
     justify-content: center;
     align-items: center;
+    
 }
 .img__carrousel{
-    height: 60rem;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
 }
+
 /* MAIN DE NOSOTROS
  */
 .nosotros__letra{
@@ -46,7 +51,13 @@ body{
     justify-content: center;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0.5rem;
 }
+.imagen__animacion:hover{
+    transform: scale(0.9);
+    transition: all 2s;
+}
+
 /* MAIN DE CONTACTO
  */
 .portada__contacto{
@@ -163,13 +174,10 @@ textarea{
 /* MAIN DE ENVIOS
  */
 .envios__titulo{
-    background-color: blanchedalmond;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
-.envios__texto{
-    background-color: antiquewhite;
-}
+
 .envios__mapa{
     display: flex;
     justify-content: center;
