@@ -12,7 +12,7 @@ body{
  */
 .portada{
     background-image: url(../recursos/imagenes/baner.jpg);
-    height: 70vh;
+    height: 50vh;
     border-color: antiquewhite;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -42,9 +42,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.carousel-item{
-    
-}
+
 /* MAIN DE NOSOTROS
  */
 .nosotros__letra{
@@ -59,9 +57,7 @@ body{
     transform: scale(0.9);
     transition: all 2s;
 }
-.texto__animacion{
 
-}
 /* MAIN DE CONTACTO
  */
 .portada__contacto{
