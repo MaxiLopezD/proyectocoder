@@ -1,6 +1,8 @@
 @import 'variables';
+@import 'helper';
 @import 'footer';
 @import 'mediaqueris';
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@
 
 body{
     font-family: $font-principal;
-    background-image: $color-principal;
+    background-image: $back-principal;
 
     .portada{
         background-image: url(../recursos/imagenes/baner.jpg);
@@ -44,6 +46,11 @@ body{
     
     /* MAIN DE NOSOTROS
      */
+    .nosotros__titulo{
+        display: flex;
+        font-family: $font-principal;
+        color: $color-secundario;
+    }
     .nosotros__letra{
         display: flex;
         align-items: center;
@@ -70,8 +77,9 @@ body{
     }
     .contacto__titulo{
         display: flex;
+        color: $color-principal;
         justify-content: center;
-        background-color: $back-principal;
+        margin: 1rem;
     }
     .contacto__main{
         align-items: center;
@@ -177,13 +185,20 @@ body{
     .envios__titulo{
         font-family: $font-principal;
         text-align: center;
+        color: $color-principal;
+    }
+    .envios__texto{
+        color: $color-secundario;
+        margin: 1rem;
     }
     
     .envios__mapa{
         display: flex;
+        background-repeat: no-repeat;
+        text-align: center;
         justify-content: center;
-        align-items: center;
+        align-items: center;    
+        margin: 1rem;
         width: 100%;
-        background-image: url(../recursos/Mapa-coberturas3.jpg);
     }
 }

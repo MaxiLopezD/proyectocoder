@@ -1,7 +1,8 @@
-/* COLOR DE FONDO */
 /* TIPO DE LETRA */
 /* COLOR DE BACK */
 /* COLOR DE BORDES */
+/* COLOR DE LETRA */
+/* MIXIN, EACH, EXTEND */
 footer {
   display: flex;
   align-items: center;
@@ -108,6 +109,10 @@ body {
     height: 50rem;
     justify-content: center;
     align-items: center; }
+  body .nosotros__titulo {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #13e1e1; }
   body .nosotros__letra {
     display: flex;
     align-items: center;
@@ -128,11 +133,12 @@ body {
     background-position: center; }
   body .contacto__titulo {
     display: flex;
+    color: #44ee88;
     justify-content: center;
-    background-color: aqua; }
+    margin: 1rem; }
   body .contacto__main {
     align-items: center;
-    background-color: aqua; }
+    background-color: linear-gradient(to top, #da27d7, blue); }
   body form {
     display: flex;
     justify-content: center; }
@@ -200,10 +206,16 @@ body {
     background-color: #e4bf90; }
   body .envios__titulo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center; }
+    text-align: center;
+    color: #44ee88; }
+  body .envios__texto {
+    color: #13e1e1;
+    margin: 1rem; }
   body .envios__mapa {
     display: flex;
+    background-repeat: no-repeat;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-image: url(../recursos/Mapa-coberturas3.jpg); }
+    margin: 1rem;
+    width: 100%; }
