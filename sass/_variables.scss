@@ -2,12 +2,18 @@
 /* TIPO DE LETRA */
 $font-principal:Verdana, Geneva, Tahoma, sans-serif ;
 $font-secundaria:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+$font-terciaria: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 /* COLOR DE BACK */
-$back-principal:linear-gradient(to top, rgb(218, 39, 215), blue) ;
+$back-principal:linear-gradient(to top, rgb(203, 170, 202), rgb(156, 143, 215)) ;
 $back-secundario:aqua ;
 /* COLOR DE BORDES */
-$border-principal:rgb(228, 191, 144);
-$borser_secundario:rgb(7, 81, 17);
+$border-principal:rgb(128, 134, 247);
+$borser_secundario:rgb(11, 11, 216);
 /* COLOR DE LETRA */
 $color-principal: rgb(68, 238, 136);
-$color-secundario: rgb(19, 225, 225); 
+$color-secundario: rgb(2, 2, 2); 
+$color-terciario: rgb(228, 18, 18);
+$color-cuarto: rgb(4, 84, 189);
+$color_quinto:rgb(246, 17, 231)
+
+

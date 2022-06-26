@@ -1,7 +1,4 @@
 @import 'variables';
-@import 'helper';
-@import 'footer';
-@import 'mediaqueris';
 
 *{
     margin: 0;
@@ -14,7 +11,7 @@ body{
 
     .portada{
         background-image: url(../recursos/imagenes/baner.jpg);
-        height: 50vh;
+        height: 30vh;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -24,13 +21,13 @@ body{
     }
     .index__main{
         display: flex;
-        flex-direction: column;
-        font-family: $font-principal;
-        padding: 1rem;
+        flex-direction: row;
+        padding: 3rem;
         flex-wrap: wrap;
         border: 0.5rem;
         justify-content: center;
         align-items: center;
+        font-family: $font-principal;
         color: $color-secundario;
         &__texto{
             justify-content: center;
@@ -38,16 +35,23 @@ body{
             
         }
     }
+    .index__titulo{
+        display: flex;
+        justify-content:center ;
+        font-family:$font-terciaria;
+        color: $color-cuarto;
+    }
     .img__carrousel{
+        width: 50rem;
         height: 50rem;
         justify-content: center;
         align-items: center;
     }
     
-    /* MAIN DE NOSOTROS
-     */
+    /* MAIN DE NOSOTROS */
     .nosotros__titulo{
         display: flex;
+        justify-content: center;
         font-family: $font-principal;
         color: $color-secundario;
     }
@@ -77,7 +81,7 @@ body{
     }
     .contacto__titulo{
         display: flex;
-        color: $color-principal;
+        color: $color-secundario;
         justify-content: center;
         margin: 1rem;
     }
@@ -117,7 +121,6 @@ body{
      */
     .grid__conteiner{
         display: grid;
-        border: 0.313rem solid $border-principal;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:     
             "titulo titulo titulo"
@@ -133,13 +136,11 @@ body{
         grid-area: titulo;
         color: $color-secundario;
         text-align: center;
-
         &__titulo{
             display: flex;
             justify-content: center;
             align-items: center;
             color: $color-secundario;
-            
         }
     }
     .grid__ferrero1{
@@ -172,9 +173,10 @@ body{
     .catalogo__main{
         display: flex;
         flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
         border: 1rem;
-        border-color: $borser_secundario; 
+        border-color: $border_principal; 
         border-style: solid;
         border-radius: 1.25rem;
         background-color: $border-principal;
@@ -185,10 +187,10 @@ body{
     .envios__titulo{
         font-family: $font-principal;
         text-align: center;
-        color: $color-principal;
+        color: $color-secundario;
     }
     .envios__texto{
-        color: $color-secundario;
+        color: $color-cuarto;
         margin: 1rem;
     }
     
@@ -201,4 +203,81 @@ body{
         margin: 1rem;
         width: 100%;
     }
+}
+footer{
+    display: flex;
+    align-items: center;
+    color: white;
+    &__redes{
+        justify-content: center;
+        height: 5rem;
+        width: 5rem;
+        margin: 10rem;
+        padding:10rem;
+}
+    &__disclaimer{
+        color:$color-terciario;
+        width: 33vh;
+        text-align: center;}
+}
+/* media de tablet*/
+@media (min-width: 541px) and (max-width: 720px){
+.portada{
+        height: 25vh;
+        }
+.grid__conteiner{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:     
+                "titulo titulo"
+                "ferrero1 ferrero2" 
+                "ferrero3 ferrero4"
+                "ferrero5 ferrero6"
+                "ferrero7 ferrero8" 
+                "ferrero9 ferrero9";
+        }  
+ul{
+    flex-direction: column;
+    }
+footer{
+        flex-direction: column;
+}
+}
+        
+    /* media de celular*/
+@media (min-width: 320px) and (max-width: 540px){
+    
+    
+    
+        /* contacto */
+.contacto__portada{
+            height: 20vh;
+        }
+        
+        
+.contacto__form{
+            display: flex;    
+            flex-direction: column;
+            
+        }    
+    
+    /* catalogo */
+.grid__conteiner{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:     
+                "titulo"
+                "ferrero1" 
+                "ferrero2" 
+                "ferrero3" 
+                "ferrero4"
+                "ferrero5" 
+                "ferrero6"
+                "ferrero7" 
+                "ferrero8" 
+                "ferrero9";
+    } 
+footer{
+            flex-direction: column;
+        }
 }

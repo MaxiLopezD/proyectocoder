@@ -2,81 +2,14 @@
 /* COLOR DE BACK */
 /* COLOR DE BORDES */
 /* COLOR DE LETRA */
-/* MIXIN, EACH, EXTEND */
-footer {
-  display: flex;
-  align-items: center;
-  color: white;
-  padding: 4% 4% 4%; }
-  footer__redes {
-    width: 4%;
-    margin: 1rem; }
-  footer__disclaimer {
-    color: aqua;
-    width: 33vh;
-    text-align: center; }
-
-/* media de tablet
- */
-@media (min-width: 541px) and (max-width: 720px) {
-  .portada {
-    height: 70vh; }
-  .grid__conteiner {
-    display: grid;
-    border: 0.313rem solid #f2f4f5;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "titulo titulo" "ferrero1 ferrero2"  "ferrero3 ferrero4" "ferrero5 ferrero6" "ferrero7 ferrero8"  "ferrero9 ferrero9";
-    justify-content: center;
-    justify-items: center;
-    gap: 0.313rem; }
-  ul {
-    flex-direction: column; }
-  footer {
-    flex-direction: column; } }
-
-/* media de celular
-     */
-@media (min-width: 320px) and (max-width: 540px) {
-  .grid__index {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.75fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
-    grid-template-areas: "portada " "resumen"  "imagen__destacada" "card__1"  "card__2" "card__3"  "card__4"; }
-  .img__index {
-    align-items: center; }
-  header {
-    flex-direction: column;
-    background-color: blue;
-    align-items: center; }
-  ul {
-    flex-direction: column; }
-  li a {
-    color: #dc23c0; }
-  .header__navegacion {
-    flex-direction: column; }
-  .header__logo {
-    width: 2rem; }
-  .portada {
-    height: 50vh; }
-  .grid__conteiner {
-    display: grid;
-    border: 0.313rem solid #f2f4f5;
-    grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "ferrero1"  "ferrero2"  "ferrero3"  "ferrero4" "ferrero5"  "ferrero6" "ferrero7"  "ferrero8"  "ferrero9";
-    justify-content: center;
-    justify-items: center;
-    gap: 0.313rem; }
-  footer {
-    flex-direction: column; } }
-
 * {
   margin: 0;
   padding: 0; }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: linear-gradient(to top, #da27d7, blue);
-  /* MAIN DE NOSOTROS
-     */
+  background-image: linear-gradient(to top, #cbaaca, #9c8fd7);
+  /* MAIN DE NOSOTROS */
   /* MAIN DE CONTACTO
      */
   /* main del catalogo
@@ -85,7 +18,7 @@ body {
      */ }
   body .portada {
     background-image: url(../recursos/imagenes/baner.jpg);
-    height: 50vh;
+    height: 30vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,30 +27,37 @@ body {
     align-items: center; }
   body .index__main {
     display: flex;
-    flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 1rem;
+    flex-direction: row;
+    padding: 3rem;
     flex-wrap: wrap;
     border: 0.5rem;
     justify-content: center;
     align-items: center;
-    color: #13e1e1; }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #020202; }
     body .index__main__texto {
       justify-content: center;
       align-items: center; }
+  body .index__titulo {
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #0454bd; }
   body .img__carrousel {
+    width: 50rem;
     height: 50rem;
     justify-content: center;
     align-items: center; }
   body .nosotros__titulo {
     display: flex;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #13e1e1; }
+    color: #020202; }
   body .nosotros__letra {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #13e1e1;
+    color: #020202;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     margin: 0.5rem; }
   body .imagen__animacion:hover {
@@ -133,12 +73,12 @@ body {
     background-position: center; }
   body .contacto__titulo {
     display: flex;
-    color: #44ee88;
+    color: #020202;
     justify-content: center;
     margin: 1rem; }
   body .contacto__main {
     align-items: center;
-    background-color: linear-gradient(to top, #da27d7, blue); }
+    background-color: linear-gradient(to top, #cbaaca, #9c8fd7); }
   body form {
     display: flex;
     justify-content: center; }
@@ -162,7 +102,6 @@ body {
     margin: 5%; }
   body .grid__conteiner {
     display: grid;
-    border: 0.313rem solid #e4bf90;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "titulo titulo titulo" "ferrero1 ferrero2 ferrero3" "ferrero4 ferrero5 ferrero6" "ferrero7 ferrero8 ferrero9";
     justify-content: center;
@@ -170,13 +109,13 @@ body {
     gap: 0.313rem; }
   body .catalogo__titulo__grid {
     grid-area: titulo;
-    color: #13e1e1;
+    color: #020202;
     text-align: center; }
     body .catalogo__titulo__grid__titulo {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #13e1e1; }
+      color: #020202; }
   body .grid__ferrero1 {
     grid-area: ferrero1; }
   body .grid__ferrero2 {
@@ -198,18 +137,19 @@ body {
   body .catalogo__main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     border: 1rem;
-    border-color: #075111;
+    border-color: #8086f7;
     border-style: solid;
     border-radius: 1.25rem;
-    background-color: #e4bf90; }
+    background-color: #8086f7; }
   body .envios__titulo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: #44ee88; }
+    color: #020202; }
   body .envios__texto {
-    color: #13e1e1;
+    color: #0454bd;
     margin: 1rem; }
   body .envios__mapa {
     display: flex;
@@ -219,3 +159,47 @@ body {
     align-items: center;
     margin: 1rem;
     width: 100%; }
+
+footer {
+  display: flex;
+  align-items: center;
+  color: white; }
+  footer__redes {
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    margin: 10rem;
+    padding: 10rem; }
+  footer__disclaimer {
+    color: #e41212;
+    width: 33vh;
+    text-align: center; }
+
+/* media de tablet*/
+@media (min-width: 541px) and (max-width: 720px) {
+  .portada {
+    height: 25vh; }
+  .grid__conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo titulo" "ferrero1 ferrero2"  "ferrero3 ferrero4" "ferrero5 ferrero6" "ferrero7 ferrero8"  "ferrero9 ferrero9"; }
+  ul {
+    flex-direction: column; }
+  footer {
+    flex-direction: column; } }
+
+/* media de celular*/
+@media (min-width: 320px) and (max-width: 540px) {
+  /* contacto */
+  .contacto__portada {
+    height: 20vh; }
+  .contacto__form {
+    display: flex;
+    flex-direction: column; }
+  /* catalogo */
+  .grid__conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "ferrero1"  "ferrero2"  "ferrero3"  "ferrero4" "ferrero5"  "ferrero6" "ferrero7"  "ferrero8"  "ferrero9"; }
+  footer {
+    flex-direction: column; } }
