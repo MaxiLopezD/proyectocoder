@@ -17,7 +17,7 @@ body {
   /* MAIN DE ENVIOS
      */ }
   body .portada {
-    background-image: url(../recursos/imagenes/baner.jpg);
+    background-image: url(../recursos/imagenes/CHOCO.jpg);
     height: 30vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
   body .index__main {
     display: flex;
     flex-direction: row;
-    padding: 3rem;
+    padding: 1.5rem;
     flex-wrap: wrap;
     border: 0.5rem;
     justify-content: center;
@@ -36,11 +36,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #020202; }
     body .index__main__texto {
-      justify-content: center;
-      align-items: center; }
+      padding: 2rem;
+      margin: 2rem; }
   body .index__titulo {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: #0454bd; }
   body .img__carrousel {
@@ -73,9 +74,15 @@ body {
     background-position: center; }
   body .contacto__titulo {
     display: flex;
-    color: #020202;
+    color: #e41212;
     justify-content: center;
     margin: 1rem; }
+  body .contacto__texto {
+    display: flex;
+    color: #e41212;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem; }
   body .contacto__main {
     align-items: center;
     background-color: linear-gradient(to top, #cbaaca, #9c8fd7); }
@@ -85,8 +92,7 @@ body {
   body .contacto__form {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 5%; }
+    align-items: center; }
   body .contacto__div1 {
     display: flex;
     flex-direction: column;
@@ -98,7 +104,7 @@ body {
     align-items: center; }
   body textarea {
     width: 70%;
-    height: 50h;
+    height: 50vh;
     margin: 5%; }
   body .grid__conteiner {
     display: grid;
@@ -149,7 +155,7 @@ body {
     text-align: center;
     color: #020202; }
   body .envios__texto {
-    color: #0454bd;
+    color: #020202;
     margin: 1rem; }
   body .envios__mapa {
     display: flex;
@@ -157,8 +163,8 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
-    width: 100%; }
+    margin: 2rem;
+    width: 90%; }
 
 footer {
   display: flex;
@@ -179,12 +185,13 @@ footer {
 @media (min-width: 541px) and (max-width: 720px) {
   .portada {
     height: 25vh; }
+  .contacto__form {
+    display: flex;
+    flex-direction: column; }
   .grid__conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "titulo titulo" "ferrero1 ferrero2"  "ferrero3 ferrero4" "ferrero5 ferrero6" "ferrero7 ferrero8"  "ferrero9 ferrero9"; }
-  ul {
-    flex-direction: column; }
   footer {
     flex-direction: column; } }
 

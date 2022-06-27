@@ -10,7 +10,7 @@ body{
     background-image: $back-principal;
 
     .portada{
-        background-image: url(../recursos/imagenes/baner.jpg);
+        background-image: url(../recursos/imagenes/CHOCO.jpg);
         height: 30vh;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body{
     .index__main{
         display: flex;
         flex-direction: row;
-        padding: 3rem;
+        padding: 1.5rem;
         flex-wrap: wrap;
         border: 0.5rem;
         justify-content: center;
@@ -30,14 +30,15 @@ body{
         font-family: $font-principal;
         color: $color-secundario;
         &__texto{
-            justify-content: center;
-            align-items: center;
+            padding: 2rem;
+            margin: 2rem;
             
         }
     }
     .index__titulo{
         display: flex;
         justify-content:center ;
+        align-items: center;
         font-family:$font-terciaria;
         color: $color-cuarto;
     }
@@ -81,9 +82,16 @@ body{
     }
     .contacto__titulo{
         display: flex;
-        color: $color-secundario;
+        color: $color-terciario;
         justify-content: center;
         margin: 1rem;
+    }
+    .contacto__texto{
+        display: flex;
+        color: $color-terciario;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
     }
     .contacto__main{
         align-items: center;
@@ -97,7 +105,6 @@ body{
         display: flex;    
         flex-direction: row;
         align-items: center;
-        padding: 5%;
     }    
     .contacto__div1{
             display: flex;
@@ -114,7 +121,7 @@ body{
     
     textarea{
         width: 70%;
-        height: 50h;
+        height: 50vh;
         margin: 5%;
     }
     /* main del catalogo
@@ -190,7 +197,7 @@ body{
         color: $color-secundario;
     }
     .envios__texto{
-        color: $color-cuarto;
+        color: $color-secundario;
         margin: 1rem;
     }
     
@@ -200,8 +207,8 @@ body{
         text-align: center;
         justify-content: center;
         align-items: center;    
-        margin: 1rem;
-        width: 100%;
+        margin: 2rem;
+        width: 90%;
     }
 }
 footer{
@@ -220,25 +227,31 @@ footer{
         width: 33vh;
         text-align: center;}
 }
+
+
 /* media de tablet*/
 @media (min-width: 541px) and (max-width: 720px){
+
 .portada{
         height: 25vh;
         }
-.grid__conteiner{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas:     
-                "titulo titulo"
-                "ferrero1 ferrero2" 
-                "ferrero3 ferrero4"
-                "ferrero5 ferrero6"
-                "ferrero7 ferrero8" 
-                "ferrero9 ferrero9";
-        }  
-ul{
+
+.contacto__form{
+    display: flex;    
     flex-direction: column;
-    }
+}
+.grid__conteiner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:     
+            "titulo titulo"
+            "ferrero1 ferrero2" 
+            "ferrero3 ferrero4"
+            "ferrero5 ferrero6"
+            "ferrero7 ferrero8" 
+            "ferrero9 ferrero9";
+        }  
+
 footer{
         flex-direction: column;
 }
