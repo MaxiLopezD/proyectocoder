@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mediaqueris';
 
 *{
     margin: 0;
@@ -12,7 +13,7 @@ body{
     .portada{
         background-image: url(../recursos/imagenes/CHOCO.jpg);
         height: 30vh;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -229,68 +230,3 @@ footer{
 }
 
 
-/* media de tablet*/
-@media (min-width: 541px) and (max-width: 720px){
-
-.portada{
-        height: 25vh;
-        }
-
-.contacto__form{
-    display: flex;    
-    flex-direction: column;
-}
-.grid__conteiner{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:     
-            "titulo titulo"
-            "ferrero1 ferrero2" 
-            "ferrero3 ferrero4"
-            "ferrero5 ferrero6"
-            "ferrero7 ferrero8" 
-            "ferrero9 ferrero9";
-        }  
-
-footer{
-        flex-direction: column;
-}
-}
-        
-    /* media de celular*/
-@media (min-width: 320px) and (max-width: 540px){
-    
-    
-    
-        /* contacto */
-.contacto__portada{
-            height: 20vh;
-        }
-        
-        
-.contacto__form{
-            display: flex;    
-            flex-direction: column;
-            
-        }    
-    
-    /* catalogo */
-.grid__conteiner{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:     
-                "titulo"
-                "ferrero1" 
-                "ferrero2" 
-                "ferrero3" 
-                "ferrero4"
-                "ferrero5" 
-                "ferrero6"
-                "ferrero7" 
-                "ferrero8" 
-                "ferrero9";
-    } 
-footer{
-            flex-direction: column;
-        }
-}
